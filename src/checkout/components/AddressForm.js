@@ -28,8 +28,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = AddressForm;
 const React = __importStar(require("react"));
-const Checkbox_1 = __importDefault(require("@mui/material/Checkbox"));
-const FormControlLabel_1 = __importDefault(require("@mui/material/FormControlLabel"));
 const FormLabel_1 = __importDefault(require("@mui/material/FormLabel"));
 const Grid2_1 = __importDefault(require("@mui/material/Grid2"));
 const OutlinedInput_1 = __importDefault(require("@mui/material/OutlinedInput"));
@@ -40,18 +38,9 @@ const FormGrid = (0, system_1.styled)(Grid2_1.default)(() => ({
 }));
 function AddressForm() {
     return (React.createElement(Grid2_1.default, { container: true, spacing: 3 },
-        React.createElement(FormGrid, { size: { xs: 12, md: 6 } },
-            React.createElement(FormLabel_1.default, { htmlFor: "first-name", required: true }, "First name"),
-            React.createElement(OutlinedInput_1.default, { id: "first-name", name: "first-name", type: "name", placeholder: "John", autoComplete: "first name", required: true, size: "small" })),
-        React.createElement(FormGrid, { size: { xs: 12, md: 6 } },
-            React.createElement(FormLabel_1.default, { htmlFor: "last-name", required: true }, "Last name"),
-            React.createElement(OutlinedInput_1.default, { id: "last-name", name: "last-name", type: "last-name", placeholder: "Snow", autoComplete: "last name", required: true, size: "small" })),
         React.createElement(FormGrid, { size: { xs: 12 } },
-            React.createElement(FormLabel_1.default, { htmlFor: "address1", required: true }, "Address line 1"),
-            React.createElement(OutlinedInput_1.default, { id: "address1", name: "address1", type: "address1", placeholder: "Street name and number", autoComplete: "shipping address-line1", required: true, size: "small" })),
-        React.createElement(FormGrid, { size: { xs: 12 } },
-            React.createElement(FormLabel_1.default, { htmlFor: "address2" }, "Address line 2"),
-            React.createElement(OutlinedInput_1.default, { id: "address2", name: "address2", type: "address2", placeholder: "Apartment, suite, unit, etc. (optional)", autoComplete: "shipping address-line2", required: true, size: "small" })),
+            React.createElement(FormLabel_1.default, { htmlFor: "business-name", required: true }, "Business name"),
+            React.createElement(OutlinedInput_1.default, { id: "business-name", name: "business-name", type: "name", placeholder: "Apple Inc", autoComplete: "business name", required: true, size: "small" })),
         React.createElement(FormGrid, { size: { xs: 6 } },
             React.createElement(FormLabel_1.default, { htmlFor: "city", required: true }, "City"),
             React.createElement(OutlinedInput_1.default, { id: "city", name: "city", type: "city", placeholder: "New York", autoComplete: "City", required: true, size: "small" })),
@@ -63,7 +52,5 @@ function AddressForm() {
             React.createElement(OutlinedInput_1.default, { id: "zip", name: "zip", type: "zip", placeholder: "12345", autoComplete: "shipping postal-code", required: true, size: "small" })),
         React.createElement(FormGrid, { size: { xs: 6 } },
             React.createElement(FormLabel_1.default, { htmlFor: "country", required: true }, "Country"),
-            React.createElement(OutlinedInput_1.default, { id: "country", name: "country", type: "country", placeholder: "United States", autoComplete: "shipping country", required: true, size: "small" })),
-        React.createElement(FormGrid, { size: { xs: 12 } },
-            React.createElement(FormControlLabel_1.default, { control: React.createElement(Checkbox_1.default, { name: "saveAddress", value: "yes" }), label: "Use this address for payment details" }))));
+            React.createElement(OutlinedInput_1.default, { id: "country", name: "country", type: "country", placeholder: "United States", autoComplete: "shipping country", required: true, size: "small" }))));
 }

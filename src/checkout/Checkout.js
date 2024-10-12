@@ -44,7 +44,6 @@ const ChevronLeftRounded_1 = __importDefault(require("@mui/icons-material/Chevro
 const ChevronRightRounded_1 = __importDefault(require("@mui/icons-material/ChevronRightRounded"));
 const AddressForm_1 = __importDefault(require("./components/AddressForm"));
 const getCheckoutTheme_1 = __importDefault(require("./theme/getCheckoutTheme"));
-const InfoMobile_1 = __importDefault(require("./components/InfoMobile"));
 const PaymentForm_1 = __importDefault(require("./components/PaymentForm"));
 const Review_1 = __importDefault(require("./components/Review"));
 const TemplateFrame_1 = __importDefault(require("./TemplateFrame"));
@@ -133,8 +132,7 @@ function Checkout() {
                         } },
                         React.createElement("div", null,
                             React.createElement(Typography_1.default, { variant: "subtitle2", gutterBottom: true }, "Selected products"),
-                            React.createElement(Typography_1.default, { variant: "body1" }, activeStep >= 2 ? '$144.97' : '$134.98')),
-                        React.createElement(InfoMobile_1.default, { totalPrice: activeStep >= 2 ? '$144.97' : '$134.98' }))),
+                            React.createElement(Typography_1.default, { variant: "body1" }, activeStep >= 2 ? '$144.97' : '$134.98')))),
                 React.createElement(Box_1.default, { sx: {
                         display: 'flex',
                         flexDirection: 'column',
@@ -176,5 +174,5 @@ function Checkout() {
                             ] },
                             activeStep !== 0 && (React.createElement(Button_1.default, { startIcon: React.createElement(ChevronLeftRounded_1.default, null), onClick: handleBack, variant: "text", sx: { display: { xs: 'none', sm: 'flex' } } }, "Previous")),
                             activeStep !== 0 && (React.createElement(Button_1.default, { startIcon: React.createElement(ChevronLeftRounded_1.default, null), onClick: handleBack, variant: "outlined", fullWidth: true, sx: { display: { xs: 'flex', sm: 'none' } } }, "Previous")),
-                            React.createElement(Button_1.default, { variant: "contained", endIcon: React.createElement(ChevronRightRounded_1.default, null), onClick: handleNext, sx: { width: { xs: '100%', sm: 'fit-content' } } }, activeStep === steps.length - 1 ? 'Place order' : 'Next')))))))));
+                            React.createElement(Button_1.default, { variant: "contained", endIcon: React.createElement(ChevronRightRounded_1.default, null), onClick: handleNext, sx: { width: { xs: '100%', sm: 'fit-content' } } }, activeStep === steps.length - 1 ? 'Get Results' : 'Next')))))))));
 }

@@ -15,11 +15,8 @@ import ChevronLeftRoundedIcon from '@mui/icons-material/ChevronLeftRounded';
 import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
 import AddressForm from './components/AddressForm';
 import getCheckoutTheme from './theme/getCheckoutTheme';
-import Info from './components/Info';
-import InfoMobile from './components/InfoMobile';
 import PaymentForm from './components/PaymentForm';
 import Review from './components/Review';
-import SitemarkIcon from './components/SitemarkIcon';
 import TemplateFrame from './TemplateFrame';
 
 const steps = ['Shipping address', 'Payment details', 'Review your order'];
@@ -146,7 +143,6 @@ export default function Checkout() {
                   {activeStep >= 2 ? '$144.97' : '$134.98'}
                 </Typography>
               </div>
-              <InfoMobile totalPrice={activeStep >= 2 ? '$144.97' : '$134.98'} />
             </CardContent>
           </Card>
 
@@ -249,7 +245,7 @@ export default function Checkout() {
                     onClick={handleNext}
                     sx={{ width: { xs: '100%', sm: 'fit-content' } }}
                   >
-                    {activeStep === steps.length - 1 ? 'Place order' : 'Next'}
+                    {activeStep === steps.length - 1 ? 'Get Results' : 'Next'}
                   </Button>
                 </Box>
               </React.Fragment>
