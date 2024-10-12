@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Installation
+
+`npm install`
+
+## Compilation 
+
+`tsc --build --watch`
+
+Make sure to have the typescript compiler installed to convert all TSX files to JS
+
 ## Available Scripts
 
 In the project directory, you can run:
